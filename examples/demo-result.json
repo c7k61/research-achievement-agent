@@ -1,0 +1,197 @@
+{
+  "mode": "offline-demo",
+  "question": "请核验论文和专利的当前状态，能写已发表和已授权吗",
+  "records": [
+    {
+      "source_id": "D80bb2c4c9819",
+      "title": "一种基于肌电信号的手部训练装置",
+      "status_code": "patent_received",
+      "status": "专利申请已受理",
+      "contributors": "周安，林明",
+      "reference": "DEMO-PATENT-001",
+      "citations": [
+        {
+          "source_id": "D80bb2c4c9819",
+          "name": "patent.txt",
+          "locator": "全文",
+          "quote": "成果名称：一种基于肌电信号的手部训练装置"
+        },
+        {
+          "source_id": "D80bb2c4c9819",
+          "name": "patent.txt",
+          "locator": "全文",
+          "quote": "状态：已受理"
+        },
+        {
+          "source_id": "D80bb2c4c9819",
+          "name": "patent.txt",
+          "locator": "全文",
+          "quote": "证明类型：专利申请受理通知书"
+        }
+      ]
+    },
+    {
+      "source_id": "D99e40a490fae",
+      "title": "基于多传感器融合的步行辅助设备控制方法",
+      "status_code": "paper_accepted",
+      "status": "论文已录用",
+      "contributors": "林明，周安，吴禾",
+      "reference": "机器人应用示例期刊",
+      "citations": [
+        {
+          "source_id": "D99e40a490fae",
+          "name": "paper.txt",
+          "locator": "全文",
+          "quote": "成果名称：基于多传感器融合的步行辅助设备控制方法"
+        },
+        {
+          "source_id": "D99e40a490fae",
+          "name": "paper.txt",
+          "locator": "全文",
+          "quote": "状态：已录用"
+        },
+        {
+          "source_id": "D99e40a490fae",
+          "name": "paper.txt",
+          "locator": "全文",
+          "quote": "证明类型：稿件录用通知"
+        }
+      ]
+    }
+  ],
+  "answer": "核验问题\n请核验论文和专利的当前状态，能写已发表和已授权吗\n\n核验结果\n• 一种基于肌电信号的手部训练装置　专利申请已受理\n  署名 周安，林明　DEMO-PATENT-001\n  [D80bb2c4c9819 · patent.txt · 全文] 成果名称：一种基于肌电信号的手部训练装置\n  [D80bb2c4c9819 · patent.txt · 全文] 状态：已受理\n  [D80bb2c4c9819 · patent.txt · 全文] 证明类型：专利申请受理通知书\n• 基于多传感器融合的步行辅助设备控制方法　论文已录用\n  署名 林明，周安，吴禾　机器人应用示例期刊\n  [D99e40a490fae · paper.txt · 全文] 成果名称：基于多传感器融合的步行辅助设备控制方法\n  [D99e40a490fae · paper.txt · 全文] 状态：已录用\n  [D99e40a490fae · paper.txt · 全文] 证明类型：稿件录用通知\n\n状态依据为导入材料中的明确字段。材料真实性和署名贡献由使用者核对。",
+  "trace": [
+    {
+      "step": 1,
+      "tool": "search_evidence",
+      "arguments": {
+        "query": "请核验论文和专利的当前状态，能写已发表和已授权吗"
+      },
+      "elapsed_ms": 1.68,
+      "result": [
+        {
+          "source_id": "D80bb2c4c9819",
+          "name": "patent.txt",
+          "page": 1,
+          "text": "以下是公开演示用的虚构材料。\n成果类型：专利\n成果名称：一种基于肌电信号的手部训练装置\n发明人：周安，林明\n申请号：DEMO-PATENT-001\n证明类型：专利申请受理通知书\n状态：已受理\n受理日期：2026-10-21\n",
+          "score": 1.2336
+        },
+        {
+          "source_id": "D99e40a490fae",
+          "name": "paper.txt",
+          "page": 1,
+          "text": "以下是公开演示用的虚构材料，姓名、题名与期刊均为示例。\n成果类型：论文\n成果名称：基于多传感器融合的步行辅助设备控制方法\n作者：林明，周安，吴禾\n期刊：机器人应用示例期刊\n证明类型：稿件录用通知\n状态：已录用\n录用日期：2026-10-15\n计划刊期：2027 年第 2 期\n",
+          "score": 0.8219
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "tool": "read_source",
+      "arguments": {
+        "source_id": "D80bb2c4c9819"
+      },
+      "elapsed_ms": 0.37,
+      "result": {
+        "source_id": "D80bb2c4c9819",
+        "name": "patent.txt",
+        "pages": [
+          {
+            "locator": "全文",
+            "text": "以下是公开演示用的虚构材料。\n成果类型：专利\n成果名称：一种基于肌电信号的手部训练装置\n发明人：周安，林明\n申请号：DEMO-PATENT-001\n证明类型：专利申请受理通知书\n状态：已受理\n受理日期：2026-10-21\n"
+          }
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "tool": "inspect_achievement",
+      "arguments": {
+        "source_id": "D80bb2c4c9819"
+      },
+      "elapsed_ms": 0.33,
+      "result": {
+        "source_id": "D80bb2c4c9819",
+        "title": "一种基于肌电信号的手部训练装置",
+        "status_code": "patent_received",
+        "status": "专利申请已受理",
+        "contributors": "周安，林明",
+        "reference": "DEMO-PATENT-001",
+        "citations": [
+          {
+            "source_id": "D80bb2c4c9819",
+            "name": "patent.txt",
+            "locator": "全文",
+            "quote": "成果名称：一种基于肌电信号的手部训练装置"
+          },
+          {
+            "source_id": "D80bb2c4c9819",
+            "name": "patent.txt",
+            "locator": "全文",
+            "quote": "状态：已受理"
+          },
+          {
+            "source_id": "D80bb2c4c9819",
+            "name": "patent.txt",
+            "locator": "全文",
+            "quote": "证明类型：专利申请受理通知书"
+          }
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "tool": "read_source",
+      "arguments": {
+        "source_id": "D99e40a490fae"
+      },
+      "elapsed_ms": 0.35,
+      "result": {
+        "source_id": "D99e40a490fae",
+        "name": "paper.txt",
+        "pages": [
+          {
+            "locator": "全文",
+            "text": "以下是公开演示用的虚构材料，姓名、题名与期刊均为示例。\n成果类型：论文\n成果名称：基于多传感器融合的步行辅助设备控制方法\n作者：林明，周安，吴禾\n期刊：机器人应用示例期刊\n证明类型：稿件录用通知\n状态：已录用\n录用日期：2026-10-15\n计划刊期：2027 年第 2 期\n"
+          }
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "tool": "inspect_achievement",
+      "arguments": {
+        "source_id": "D99e40a490fae"
+      },
+      "elapsed_ms": 0.05,
+      "result": {
+        "source_id": "D99e40a490fae",
+        "title": "基于多传感器融合的步行辅助设备控制方法",
+        "status_code": "paper_accepted",
+        "status": "论文已录用",
+        "contributors": "林明，周安，吴禾",
+        "reference": "机器人应用示例期刊",
+        "citations": [
+          {
+            "source_id": "D99e40a490fae",
+            "name": "paper.txt",
+            "locator": "全文",
+            "quote": "成果名称：基于多传感器融合的步行辅助设备控制方法"
+          },
+          {
+            "source_id": "D99e40a490fae",
+            "name": "paper.txt",
+            "locator": "全文",
+            "quote": "状态：已录用"
+          },
+          {
+            "source_id": "D99e40a490fae",
+            "name": "paper.txt",
+            "locator": "全文",
+            "quote": "证明类型：稿件录用通知"
+          }
+        ]
+      }
+    }
+  ]
+}

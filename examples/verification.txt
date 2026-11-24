@@ -1,0 +1,36 @@
+test_acceptance_cannot_establish_publication (test_agent.EvidenceTests.test_acceptance_cannot_establish_publication) ... ok
+test_ambiguous_title_is_unknown (test_agent.EvidenceTests.test_ambiguous_title_is_unknown) ... ok
+test_citations_are_exact_quotes (test_agent.EvidenceTests.test_citations_are_exact_quotes) ... ok
+test_conflicting_statuses (test_agent.EvidenceTests.test_conflicting_statuses) ... ok
+test_four_statuses (test_agent.EvidenceTests.test_four_statuses) ... ok
+test_future_publication_is_unknown (test_agent.EvidenceTests.test_future_publication_is_unknown) ... ok
+test_instructions_are_data (test_agent.EvidenceTests.test_instructions_are_data) ... ok
+test_negated_status_is_unknown (test_agent.EvidenceTests.test_negated_status_is_unknown) ... ok
+test_patent_receipt_cannot_establish_grant (test_agent.EvidenceTests.test_patent_receipt_cannot_establish_grant) ... ok
+test_atomic_reingest_and_removal (test_agent.WorkflowTests.test_atomic_reingest_and_removal) ... ok
+test_budget_stops_infinite_tool_loop (test_agent.WorkflowTests.test_budget_stops_infinite_tool_loop) ... ok
+test_docx_includes_table_text (test_agent.WorkflowTests.test_docx_includes_table_text) ... ok
+test_final_plan_cannot_reference_unchecked_source (test_agent.WorkflowTests.test_final_plan_cannot_reference_unchecked_source) ... ok
+test_model_connection_error_is_actionable (test_agent.WorkflowTests.test_model_connection_error_is_actionable) ... ok
+test_offline_end_to_end (test_agent.WorkflowTests.test_offline_end_to_end) ... ok
+test_ollama_protocol_round_trip (test_agent.WorkflowTests.test_ollama_protocol_round_trip) ... ok
+test_parse_failure_preserves_collection (test_agent.WorkflowTests.test_parse_failure_preserves_collection) ... ok
+test_read_and_tool_boundaries (test_agent.WorkflowTests.test_read_and_tool_boundaries) ... ok
+test_run_state_is_isolated (test_agent.WorkflowTests.test_run_state_is_isolated) ... ok
+test_scan_like_pdf_reports_ocr_requirement (test_agent.WorkflowTests.test_scan_like_pdf_reports_ocr_requirement) ... ok
+test_search_chinese (test_agent.WorkflowTests.test_search_chinese) ... ok
+test_tool_errors_allow_recovery (test_agent.WorkflowTests.test_tool_errors_allow_recovery) ... ok
+test_installed_model (test_notices.DiagnosticTests.test_installed_model) ... ok
+test_unavailable_model (test_notices.DiagnosticTests.test_unavailable_model) ... ok
+test_explicit_fields_have_unique_citations (test_notices.NoticeTests.test_explicit_fields_have_unique_citations) ... ok
+test_future_issue_alone_does_not_mean_published (test_notices.NoticeTests.test_future_issue_alone_does_not_mean_published) ... ok
+test_header_without_acceptance_body_is_unknown (test_notices.NoticeTests.test_header_without_acceptance_body_is_unknown) ... ok
+test_negative_acceptance_is_not_positive (test_notices.NoticeTests.test_negative_acceptance_is_not_positive) ... ok
+test_positive_and_negative_notice_is_conflict (test_notices.NoticeTests.test_positive_and_negative_notice_is_conflict) ... ok
+test_unstructured_acceptance_notice (test_notices.NoticeTests.test_unstructured_acceptance_notice) ... ok
+test_unstructured_patent_receipt (test_notices.NoticeTests.test_unstructured_patent_receipt) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 1.246s
+
+OK
